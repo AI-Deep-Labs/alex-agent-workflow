@@ -1,0 +1,17 @@
+---
+description: ALEX AI workflow gates and cross-agent coding rules
+alwaysApply: true
+---
+
+# ALEX Workflow for Cursor
+
+Follow `AGENTS.md`: ASK -> SPEC -> PLAN -> CODE -> REVIEW.
+
+Hard gates:
+- Never modify application source code from raw requirements.
+- `APPROVED` approves SPEC/PLAN only.
+- Modify source code only after exact `APPROVED CODE`.
+- During CODE, edit only files listed in the approved PLAN.
+- Stop before unapproved public API, database, auth, payment/order, or deployment changes.
+
+Use `.agents/skills/<phase>/SKILL.md` for phase details.

@@ -1,0 +1,5 @@
+description = "Execute ALEX ask workflow"
+prompt = """
+Read AGENTS.md first, then read .agents/skills/ask/SKILL.md and execute that workflow.
+Arguments: {{args}}
+"""
