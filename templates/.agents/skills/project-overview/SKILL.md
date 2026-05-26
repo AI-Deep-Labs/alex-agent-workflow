@@ -1,13 +1,13 @@
 ---
 name: project-overview
-description: Analyze and document the entire project architecture, technology stack, coding conventions, design style, services, domains, features, communication patterns, functional flows, runtime configuration, operational concerns, security posture, tests, and risks. Use when the user wants to understand, audit, onboard, document, or generate a project knowledge base. The required output is a markdown file named project_overview.md.
+description: Analyze and document the entire project architecture, technology stack, coding conventions, design style, services, domains, features, communication patterns, functional flows, runtime configuration, operational concerns, security posture, tests, and risks. Use when the user wants to understand, audit, onboard, document, or generate a project knowledge base. The required output is a markdown file named docs/project_overview.md.
 ---
 
 # Project Overview Knowledge Base
 
 ## Purpose
 
-This skill guides an agent to inspect an existing repository and produce a complete `project_overview.md` knowledge base.
+This skill guides an agent to inspect an existing repository and produce a complete `docs/project_overview.md` knowledge base.
 
 The document must help future agents understand the project before making changes. It should answer:
 
@@ -27,7 +27,7 @@ The document must help future agents understand the project before making change
 The final output must be a markdown file named:
 
 ```text
-project_overview.md
+docs/project_overview.md
 ```
 
 This file is intended to be a durable knowledge base for future agents.
@@ -96,7 +96,7 @@ Use this skill when the user asks for:
 - Onboarding documentation
 - Codebase analysis
 - Project knowledge base
-- `project_overview.md`
+- `docs/project_overview.md`
 - System analysis
 - Service map
 - Domain map
@@ -108,7 +108,7 @@ Example triggers:
 
 ```text
 Overview toàn bộ project này giúp tôi.
-Tạo project_overview.md cho repo này.
+Tạo docs/project_overview.md cho repo này.
 Phân tích kiến trúc project.
 Document toàn bộ services/domain/features.
 Tạo knowledge base để agent sau sử dụng.
@@ -122,12 +122,12 @@ Map toàn bộ API, service, domain, database, event.
 The required deliverable is:
 
 ```text
-project_overview.md
+docs/project_overview.md
 ```
 
 The agent must either:
 
-1. Create or update `project_overview.md` directly when file-write access is available.
+1. Create or update `docs/project_overview.md` directly when file-write access is available.
 2. Otherwise, output the full markdown content so the user can save it manually.
 
 Do not only summarize in chat. The deliverable must be the actual markdown content or file.
@@ -135,7 +135,7 @@ Do not only summarize in chat. The deliverable must be the actual markdown conte
 After creating or updating the file, respond with a concise summary:
 
 ```markdown
-Created `project_overview.md`.
+Created `docs/project_overview.md`.
 
 Summary:
 - Architecture: ...
@@ -1032,7 +1032,7 @@ Also include:
 
 ---
 
-## Required `project_overview.md` Structure
+## Required `docs/project_overview.md` Structure
 
 The final file must use this exact top-level structure:
 
@@ -1105,7 +1105,7 @@ This is mandatory. It helps future agents know where the overview came from.
 
 ## Update Rules
 
-If `project_overview.md` already exists:
+If `docs/project_overview.md` already exists:
 
 1. Read the existing file first.
 2. Preserve useful existing knowledge.
@@ -1194,7 +1194,7 @@ Focus on knowledge useful for future agents.
 Before finishing, verify:
 
 ```text
-[ ] Output is named project_overview.md
+[ ] Output is named docs/project_overview.md
 [ ] The document is useful for future agents
 [ ] Architecture is described with evidence
 [ ] Technology stack is listed
@@ -1215,12 +1215,12 @@ Before finishing, verify:
 [ ] Evidence index is included
 [ ] Uncertain claims are marked
 [ ] No invented facts
-[ ] Existing project_overview.md was preserved/updated if present
+[ ] Existing docs/project_overview.md was preserved/updated if present
 ```
 
 ---
 
-## Minimal `project_overview.md` Template
+## Minimal `docs/project_overview.md` Template
 
 Use this template when creating a new overview.
 
@@ -1415,4 +1415,4 @@ This skill should cooperate with:
 | `service-map.md` | Can provide deeper service dependency details |
 | `api-contracts.md` | Can provide deeper API/event contract details |
 
-`project_overview.md` is the high-level project knowledge base. Other files may go deeper into specific areas.
+`docs/project_overview.md` is the high-level project knowledge base. Other files may go deeper into specific areas.
