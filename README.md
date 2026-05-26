@@ -1,4 +1,4 @@
-# ALEX Agent Workflow Template v2
+# ALEX Agent Workflow Template
 
 A cross-agent development workflow template for Claude Code, Gemini CLI/AI Studio, Cursor, and other agentic coding tools.
 
@@ -30,7 +30,8 @@ project-root/
 │       ├── plan/SKILL.md
 │       ├── code/SKILL.md
 │       ├── review/SKILL.md
-│       └── init-ai-workflow/SKILL.md
+│       ├── init-ai-workflow/SKILL.md
+│       └── project-overview/SKILL.md
 ├── .claude/
 │   ├── skills/              # Claude-native skills; can mirror .agents/skills
 │   └── commands/            # Optional compatibility wrappers

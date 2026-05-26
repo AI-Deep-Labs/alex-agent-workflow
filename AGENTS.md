@@ -26,6 +26,7 @@ For each workflow phase, read the corresponding skill:
 - CODE: `.agents/skills/code/SKILL.md`
 - REVIEW: `.agents/skills/review/SKILL.md`
 - INIT: `.agents/skills/init-ai-workflow/SKILL.md`
+- PROJECT-OVERVIEW: `.agents/skills/project-overview/SKILL.md`
 
 ## Response language
 Default to the user's language. Keep outputs structured and action-oriented.
