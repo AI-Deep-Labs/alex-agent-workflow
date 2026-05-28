@@ -1,12 +1,12 @@
 # GEMINI.md
 
-Read `AGENTS.md` first. Follow ALEX workflow: ASK -> SPEC -> PLAN -> CODE -> REVIEW.
+Read `AGENTS.md` first. Follow ALEX workflow: GRILL-ME -> SPEC -> PLAN -> CODE -> REVIEW.
 
 Gemini-specific usage:
 - **Language**: Follow `AGENTS.md` strictly and generate all workspace documents and outputs in Vietnamese.
 - Gemini CLI custom commands should live in `.gemini/commands/*.toml`.
 - For Gemini Advanced / AI Studio, use `.cursor/prompts/*.md` or `.agents/skills/*/SKILL.md` as copy-paste prompts.
-- If slash commands are unavailable, treat `/ask`, `/spec`, `/plan`, `/code`, `/review`, `/init-ai-workflow`, `/project-overview` as natural-language phase requests.
+- If slash commands are unavailable, treat `/grill-me`, `/spec`, `/plan`, `/code`, `/review`, `/init-ai-workflow`, `/project-overview` as natural-language phase requests.
 
 Project context is filled by `/init-ai-workflow`:
 - Project type: `[DETECTED_PROJECT_TYPE]`

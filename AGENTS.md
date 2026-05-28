@@ -1,10 +1,10 @@
 # ALEX Agent Operating Rules
 
 ## Mission
-Use a controlled software delivery workflow: ASK -> SPEC -> PLAN -> CODE -> REVIEW.
+Use a controlled software delivery workflow: GRILL-ME -> SPEC -> PLAN -> CODE -> REVIEW.
 
 ## Hard gates
-1. Do not create or modify application source code during ASK, SPEC, or PLAN.
+1. Do not create or modify application source code during GRILL-ME, SPEC, or PLAN.
 2. `APPROVED` only approves the current document phase. It does not authorize coding.
 3. Coding may start only after the user writes exactly: `APPROVED CODE`.
 4. During CODE, modify only files listed in the approved PLAN unless the user explicitly expands scope.
@@ -20,7 +20,7 @@ Use a controlled software delivery workflow: ASK -> SPEC -> PLAN -> CODE -> REVI
 
 ## Skill loading
 For each workflow phase, read the corresponding skill:
-- ASK: `.agents/skills/ask/SKILL.md`
+- GRILL-ME: `.agents/skills/grill-me/SKILL.md`
 - SPEC: `.agents/skills/spec/SKILL.md`
 - PLAN: `.agents/skills/plan/SKILL.md`
 - CODE: `.agents/skills/code/SKILL.md`

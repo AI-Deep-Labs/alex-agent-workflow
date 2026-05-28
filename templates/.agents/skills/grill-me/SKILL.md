@@ -1,10 +1,10 @@
 ---
-name: ask
+name: grill-me
 description: Clarify raw requirements before any specification, planning, or coding. Use for new feature requests, bugs, vague changes, or business workflows that need analysis.
 disable-model-invocation: false
 ---
 
-# ASK Skill
+# Grill-me Skill
 
 ## Gate
 Do not modify source code. Do not produce an implementation plan. Do not create files unless the user explicitly asks to save the clarification.

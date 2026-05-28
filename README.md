@@ -4,7 +4,7 @@ A cross-agent development workflow template for Claude Code, Gemini CLI/AI Studi
 
 ## Core lifecycle
 
-ASK -> SPEC -> PLAN -> CODE -> REVIEW
+GRILL-ME -> SPEC -> PLAN -> CODE -> REVIEW
 
 The model must not modify application source code from a raw requirement. Coding is allowed only after an approved SPEC, approved PLAN, and exact `APPROVED CODE` confirmation.
 
@@ -25,7 +25,7 @@ project-root/
 │   └── templates/
 ├── .agents/
 │   └── skills/
-│       ├── ask/SKILL.md
+│       ├── grill-me/SKILL.md
 │       ├── spec/SKILL.md
 │       ├── plan/SKILL.md
 │       ├── code/SKILL.md
