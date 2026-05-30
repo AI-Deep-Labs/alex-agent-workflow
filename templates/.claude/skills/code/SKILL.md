@@ -1,6 +1,6 @@
 ---
 name: code
-description: Implement the approved plan, run build/tests, and report results. Use only after exact APPROVED CODE confirmation.
+description: Implement the approved plan, run build/tests, and report results. Use only after APPROVED confirmation (case-insensitive).
 disable-model-invocation: true
 argument-hint: "[short-name]"
 ---
@@ -8,7 +8,7 @@ argument-hint: "[short-name]"
 # CODE Skill
 
 ## Hard gate
-Stop unless the user has provided exactly `APPROVED CODE` in the current task context.
+Stop unless the user has provided a case-insensitive `APPROVED` directive in the current task context.
 
 ## Required inputs
 - Approved SPEC: `.ai/specs/SPEC-[short-name].md`

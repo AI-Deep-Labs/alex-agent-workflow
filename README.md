@@ -6,7 +6,7 @@ A cross-agent development workflow template for Claude Code, Gemini CLI/AI Studi
 
 GRILL-ME -> SPEC -> PLAN -> CODE -> REVIEW
 
-The model must not modify application source code from a raw requirement. Coding is allowed only after an approved SPEC, approved PLAN, and exact `APPROVED CODE` confirmation.
+The model must not modify application source code from a raw requirement. Coding is allowed only after an approved SPEC and PLAN phase, authorized by a single, case-insensitive `APPROVED` directive.
 
 ## Recommended target-project structure
 
@@ -31,7 +31,8 @@ project-root/
 │       ├── code/SKILL.md
 │       ├── review/SKILL.md
 │       ├── init-ai-workflow/SKILL.md
-│       └── project-overview/SKILL.md
+│       ├── project-overview/SKILL.md
+│       └── adr/SKILL.md
 ├── .claude/
 │   ├── skills/              # Claude-native skills; can mirror .agents/skills
 │   └── commands/            # Optional compatibility wrappers

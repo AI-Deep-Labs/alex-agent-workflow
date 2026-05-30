@@ -79,12 +79,14 @@ REQUIRED_FILES=(
   "templates/docs/AI_WORKFLOW.md:docs/AI_WORKFLOW.md"
   "templates/.ai/templates/SPEC-template.md:.ai/templates/SPEC-template.md"
   "templates/.ai/templates/PLAN-template.md:.ai/templates/PLAN-template.md"
+  "templates/.ai/templates/ADR-template.md:.ai/templates/ADR-template.md"
   "templates/.claude/commands/grill-me.md:.claude/commands/grill-me.md"
   "templates/.claude/commands/spec.md:.claude/commands/spec.md"
   "templates/.claude/commands/plan.md:.claude/commands/plan.md"
   "templates/.claude/commands/code.md:.claude/commands/code.md"
   "templates/.claude/commands/review.md:.claude/commands/review.md"
   "templates/.claude/commands/init-ai-workflow.md:.claude/commands/init-ai-workflow.md"
+  "templates/.claude/commands/adr.md:.claude/commands/adr.md"
   "templates/.gemini/commands/grill-me.toml:.gemini/commands/grill-me.toml"
   "templates/.gemini/commands/spec.toml:.gemini/commands/spec.toml"
   "templates/.gemini/commands/plan.toml:.gemini/commands/plan.toml"
@@ -92,6 +94,7 @@ REQUIRED_FILES=(
   "templates/.gemini/commands/review.toml:.gemini/commands/review.toml"
   "templates/.gemini/commands/init-ai-workflow.toml:.gemini/commands/init-ai-workflow.toml"
   "templates/.gemini/commands/project-overview.toml:.gemini/commands/project-overview.toml"
+  "templates/.gemini/commands/adr.toml:.gemini/commands/adr.toml"
   "templates/.cursor/rules/alex-workflow.mdc:.cursor/rules/alex-workflow.mdc"
   "templates/.cursor/prompts/grill-me.md:.cursor/prompts/grill-me.md"
   "templates/.cursor/prompts/spec.md:.cursor/prompts/spec.md"
@@ -100,6 +103,7 @@ REQUIRED_FILES=(
   "templates/.cursor/prompts/review.md:.cursor/prompts/review.md"
   "templates/.cursor/prompts/init-ai-workflow.md:.cursor/prompts/init-ai-workflow.md"
   "templates/.cursor/prompts/project-overview.md:.cursor/prompts/project-overview.md"
+  "templates/.cursor/prompts/adr.md:.cursor/prompts/adr.md"
   "templates/.agents/skills/init-ai-workflow/SKILL.md:.agents/skills/init-ai-workflow/SKILL.md"
   "templates/.agents/skills/grill-me/SKILL.md:.agents/skills/grill-me/SKILL.md"
   "templates/.agents/skills/spec/SKILL.md:.agents/skills/spec/SKILL.md"
@@ -107,6 +111,7 @@ REQUIRED_FILES=(
   "templates/.agents/skills/code/SKILL.md:.agents/skills/code/SKILL.md"
   "templates/.agents/skills/review/SKILL.md:.agents/skills/review/SKILL.md"
   "templates/.agents/skills/project-overview/SKILL.md:.agents/skills/project-overview/SKILL.md"
+  "templates/.agents/skills/adr/SKILL.md:.agents/skills/adr/SKILL.md"
   "templates/.claude/skills/init-ai-workflow/SKILL.md:.claude/skills/init-ai-workflow/SKILL.md"
   "templates/.claude/skills/grill-me/SKILL.md:.claude/skills/grill-me/SKILL.md"
   "templates/.claude/skills/spec/SKILL.md:.claude/skills/spec/SKILL.md"
@@ -114,6 +119,7 @@ REQUIRED_FILES=(
   "templates/.claude/skills/code/SKILL.md:.claude/skills/code/SKILL.md"
   "templates/.claude/skills/review/SKILL.md:.claude/skills/review/SKILL.md"
   "templates/.claude/skills/project-overview/SKILL.md:.claude/skills/project-overview/SKILL.md"
+  "templates/.claude/skills/adr/SKILL.md:.claude/skills/adr/SKILL.md"
 )
 
 # Optional legacy/fallback files. Missing files are skipped.
@@ -125,6 +131,7 @@ OPTIONAL_FILES=(
   "templates/.gemini/prompts/code.md:.gemini/prompts/code.md"
   "templates/.gemini/prompts/review.md:.gemini/prompts/review.md"
   "templates/.gemini/prompts/init-ai-workflow.md:.gemini/prompts/init-ai-workflow.md"
+  "templates/.gemini/prompts/adr.md:.gemini/prompts/adr.md"
 )
 
 TARGET_DIRS=(
@@ -142,6 +149,7 @@ TARGET_DIRS=(
   ".agents/skills/code"
   ".agents/skills/review"
   ".agents/skills/project-overview"
+  ".agents/skills/adr"
   ".claude/skills/init-ai-workflow"
   ".claude/skills/grill-me"
   ".claude/skills/spec"
@@ -149,6 +157,7 @@ TARGET_DIRS=(
   ".claude/skills/code"
   ".claude/skills/review"
   ".claude/skills/project-overview"
+  ".claude/skills/adr"
   ".claude/commands"
   ".gemini/commands"
   ".gemini/prompts"

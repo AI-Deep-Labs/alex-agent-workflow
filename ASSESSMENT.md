@@ -13,7 +13,7 @@ Good foundation. The ASK -> SPEC -> PLAN -> CODE -> REVIEW lifecycle is clear an
 | Cursor rules | Uses `.cursorrules`. | Modern Cursor project rules should be under `.cursor/rules/*.mdc`; `.cursorrules` is legacy/fallback. | Add `.cursor/rules/alex-workflow.mdc`; optionally generate `.cursorrules`. |
 | Generic agent compatibility | No top-level `AGENTS.md`. | Cursor/other agents may not know the canonical workflow. | Add `AGENTS.md` as cross-agent source of truth. |
 | Phase artifacts | Has specs and plans, but lacks decisions, reviews, run logs. | Harder to audit decisions, test results, and release readiness. | Add `.ai/decisions`, `.ai/reviews`, `.ai/runs`. |
-| Approval semantics | Good, but not fully stateful. | Agent may confuse `APPROVED` vs `APPROVED CODE` across turns. | Each skill should re-read prior artifact and validate current phase. |
+| Approval semantics | Good, but not fully stateful. | Agent may confuse `APPROVED` across turns. | Each skill should re-read prior artifact and validate current phase. |
 | CODE boundaries | Says only files in plan, but no handling for newly discovered files. | Agent may edit extra files silently. | If file not in plan, stop and request plan update. |
 | Review output | Good, but severity labels missing. | Harder to prioritize findings. | Add Critical/High/Medium/Low/Nit. |
 | Duplication | CLAUDE/GEMINI/Cursor contain repeated full workflow text. | Updates drift across tools. | Put canonical rules in `AGENTS.md` and skills; tool files become adapters. |

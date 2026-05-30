@@ -60,6 +60,7 @@ $TargetDirs = @(
     ".agents\skills\code",
     ".agents\skills\review",
     ".agents\skills\project-overview",
+    ".agents\skills\adr",
     ".claude\skills\init-ai-workflow",
     ".claude\skills\grill-me",
     ".claude\skills\spec",
@@ -67,6 +68,7 @@ $TargetDirs = @(
     ".claude\skills\code",
     ".claude\skills\review",
     ".claude\skills\project-overview",
+    ".claude\skills\adr",
     ".claude\commands",
     ".gemini\commands",
     ".gemini\prompts",
@@ -82,12 +84,14 @@ $RequiredFiles = @(
     @{ Src = "templates\docs\AI_WORKFLOW.md"; Dest = "docs\AI_WORKFLOW.md" },
     @{ Src = "templates\.ai\templates\SPEC-template.md"; Dest = ".ai\templates\SPEC-template.md" },
     @{ Src = "templates\.ai\templates\PLAN-template.md"; Dest = ".ai\templates\PLAN-template.md" },
+    @{ Src = "templates\.ai\templates\ADR-template.md"; Dest = ".ai\templates\ADR-template.md" },
     @{ Src = "templates\.claude\commands\grill-me.md"; Dest = ".claude\commands\grill-me.md" },
     @{ Src = "templates\.claude\commands\spec.md"; Dest = ".claude\commands\spec.md" },
     @{ Src = "templates\.claude\commands\plan.md"; Dest = ".claude\commands\plan.md" },
     @{ Src = "templates\.claude\commands\code.md"; Dest = ".claude\commands\code.md" },
     @{ Src = "templates\.claude\commands\review.md"; Dest = ".claude\commands\review.md" },
     @{ Src = "templates\.claude\commands\init-ai-workflow.md"; Dest = ".claude\commands\init-ai-workflow.md" },
+    @{ Src = "templates\.claude\commands\adr.md"; Dest = ".claude\commands\adr.md" },
     @{ Src = "templates\.gemini\commands\grill-me.toml"; Dest = ".gemini\commands\grill-me.toml" },
     @{ Src = "templates\.gemini\commands\spec.toml"; Dest = ".gemini\commands\spec.toml" },
     @{ Src = "templates\.gemini\commands\plan.toml"; Dest = ".gemini\commands\plan.toml" },
@@ -95,6 +99,7 @@ $RequiredFiles = @(
     @{ Src = "templates\.gemini\commands\review.toml"; Dest = ".gemini\commands\review.toml" },
     @{ Src = "templates\.gemini\commands\init-ai-workflow.toml"; Dest = ".gemini\commands\init-ai-workflow.toml" },
     @{ Src = "templates\.gemini\commands\project-overview.toml"; Dest = ".gemini\commands\project-overview.toml" },
+    @{ Src = "templates\.gemini\commands\adr.toml"; Dest = ".gemini\commands\adr.toml" },
     @{ Src = "templates\.cursor\rules\alex-workflow.mdc"; Dest = ".cursor\rules\alex-workflow.mdc" },
     @{ Src = "templates\.cursor\prompts\grill-me.md"; Dest = ".cursor\prompts\grill-me.md" },
     @{ Src = "templates\.cursor\prompts\spec.md"; Dest = ".cursor\prompts\spec.md" },
@@ -103,6 +108,7 @@ $RequiredFiles = @(
     @{ Src = "templates\.cursor\prompts\review.md"; Dest = ".cursor\prompts\review.md" },
     @{ Src = "templates\.cursor\prompts\init-ai-workflow.md"; Dest = ".cursor\prompts\init-ai-workflow.md" },
     @{ Src = "templates\.cursor\prompts\project-overview.md"; Dest = ".cursor\prompts\project-overview.md" },
+    @{ Src = "templates\.cursor\prompts\adr.md"; Dest = ".cursor\prompts\adr.md" },
     @{ Src = "templates\.agents\skills\init-ai-workflow\SKILL.md"; Dest = ".agents\skills\init-ai-workflow\SKILL.md" },
     @{ Src = "templates\.agents\skills\grill-me\SKILL.md"; Dest = ".agents\skills\grill-me\SKILL.md" },
     @{ Src = "templates\.agents\skills\spec\SKILL.md"; Dest = ".agents\skills\spec\SKILL.md" },
@@ -110,13 +116,15 @@ $RequiredFiles = @(
     @{ Src = "templates\.agents\skills\code\SKILL.md"; Dest = ".agents\skills\code\SKILL.md" },
     @{ Src = "templates\.agents\skills\review\SKILL.md"; Dest = ".agents\skills\review\SKILL.md" },
     @{ Src = "templates\.agents\skills\project-overview\SKILL.md"; Dest = ".agents\skills\project-overview\SKILL.md" },
+    @{ Src = "templates\.agents\skills\adr\SKILL.md"; Dest = ".agents\skills\adr\SKILL.md" },
     @{ Src = "templates\.claude\skills\init-ai-workflow\SKILL.md"; Dest = ".claude\skills\init-ai-workflow\SKILL.md" },
     @{ Src = "templates\.claude\skills\grill-me\SKILL.md"; Dest = ".claude\skills\grill-me\SKILL.md" },
     @{ Src = "templates\.claude\skills\spec\SKILL.md"; Dest = ".claude\skills\spec\SKILL.md" },
     @{ Src = "templates\.claude\skills\plan\SKILL.md"; Dest = ".claude\skills\plan\SKILL.md" },
     @{ Src = "templates\.claude\skills\code\SKILL.md"; Dest = ".claude\skills\code\SKILL.md" },
     @{ Src = "templates\.claude\skills\review\SKILL.md"; Dest = ".claude\skills\review\SKILL.md" },
-    @{ Src = "templates\.claude\skills\project-overview\SKILL.md"; Dest = ".claude\skills\project-overview\SKILL.md" }
+    @{ Src = "templates\.claude\skills\project-overview\SKILL.md"; Dest = ".claude\skills\project-overview\SKILL.md" },
+    @{ Src = "templates\.claude\skills\adr\SKILL.md"; Dest = ".claude\skills\adr\SKILL.md" }
 )
 
 $OptionalFiles = @(
@@ -126,7 +134,8 @@ $OptionalFiles = @(
     @{ Src = "templates\.gemini\prompts\plan.md"; Dest = ".gemini\prompts\plan.md" },
     @{ Src = "templates\.gemini\prompts\code.md"; Dest = ".gemini\prompts\code.md" },
     @{ Src = "templates\.gemini\prompts\review.md"; Dest = ".gemini\prompts\review.md" },
-    @{ Src = "templates\.gemini\prompts\init-ai-workflow.md"; Dest = ".gemini\prompts\init-ai-workflow.md" }
+    @{ Src = "templates\.gemini\prompts\init-ai-workflow.md"; Dest = ".gemini\prompts\init-ai-workflow.md" },
+    @{ Src = "templates\.gemini\prompts\adr.md"; Dest = ".gemini\prompts\adr.md" }
 )
 
 $Stats = [ordered]@{

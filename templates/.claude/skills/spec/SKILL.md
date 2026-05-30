@@ -40,4 +40,7 @@ Do not modify application source code. You may create or update `.ai/specs/SPEC-
 15. Approval
 
 ## Final prompt
-Ask: "Do you approve this SPEC? Reply **APPROVED** to continue to implementation planning."
+Ask: "Do you approve this SPEC?
+- Reply **APPROVED** (case-insensitive) to continue to implementation planning.
+- Reply **REJECTED** (case-insensitive) to reject. I will stop and ask if you want a complete re-analysis (yes/no).
+- Reply **RE-EXECUTE** (case-insensitive, also accepts `re-excute`) to refine and improve the current spec. I will edit the existing SPEC file directly instead of creating a new one, and ask clarifying questions if needed."

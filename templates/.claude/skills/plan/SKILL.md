@@ -40,4 +40,7 @@ Do not modify application source code. You may create or update `.ai/plans/PLAN-
 14. Code Approval
 
 ## Final prompt
-Ask: "Do you approve coding? Reply **APPROVED CODE** to start implementation."
+Ask: "Do you approve coding?
+- Reply **APPROVED** (case-insensitive) to start implementation.
+- Reply **REJECTED** (case-insensitive) to reject. I will stop and ask if you want a complete re-analysis (yes/no).
+- Reply **RE-EXECUTE** (case-insensitive, also accepts `re-excute`) to refine and improve the current plan. I will edit the existing PLAN file directly instead of creating a new one, and ask clarifying questions if needed."
