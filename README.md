@@ -1,4 +1,4 @@
-# ALEX Agent Workflow Template
+# ALEX AI Agent Factory
 
 A cross-agent development workflow template for Claude Code, Gemini CLI/AI Studio, Cursor, and other agentic coding tools.
 
