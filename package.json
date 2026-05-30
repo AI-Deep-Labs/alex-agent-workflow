@@ -1,18 +1,18 @@
 {
-  "name": "alex-agent-workflow",
-  "version": "2.0.0",
+  "name": "alex-ai-agent-factory",
+  "version": "1.0.0",
   "description": "Controlled software delivery workflow template for AI agents",
   "main": "bin/install.js",
   "bin": {
-    "alex-agent-workflow": "bin/install.js"
+    "alex-ai-agent-factory": "bin/install.js"
   },
   "scripts": {
     "postinstall": "node bin/install.js"
   },
   "keywords": [
     "alex",
-    "agent",
-    "workflow",
+    "alex-ai-agent",
+    "alex-agent-factory",
     "claude",
     "gemini",
     "cursor",

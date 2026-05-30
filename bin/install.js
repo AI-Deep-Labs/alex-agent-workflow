@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * ALEX AI Workflow Installer
+ * ALEX AI Agent Factory
  * Cross-platform Node.js script.
  */
 
@@ -228,7 +228,7 @@ function copyWorkflowFile(item, required) {
 }
 
 console.log(`${colors.cyan}=============================================${colors.reset}`);
-console.log(`${colors.cyan}  ALEX AI Workflow NPM Installer${colors.reset}`);
+console.log(`${colors.cyan}  ALEX AI Agent Factory NPM Installer${colors.reset}`);
 console.log(`${colors.cyan}=============================================${colors.reset}`);
 console.log(`Template root: ${templateRoot}`);
 console.log(`Target root:   ${targetRoot}`);
